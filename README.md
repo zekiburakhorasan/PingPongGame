@@ -1,2 +1,3 @@
 # PingPongGame
-2D ping pong game with using unity
+2D Ping Pong game with using unity
+Written for game programming lesson
