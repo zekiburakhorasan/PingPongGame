@@ -845,9 +845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95e7064cc043a940bf8860eae8c8c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 1659918709}
   speed: 30
   verticalAxis: Vertical1
-  Score: 0
 --- !u!1 &1659918707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,7 +1264,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.01
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1462,9 +1462,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95e7064cc043a940bf8860eae8c8c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreText: {fileID: 103897889}
   speed: 30
   verticalAxis: Vertical2
-  Score: 0
 --- !u!1 &2050875205
 GameObject:
   m_ObjectHideFlags: 0
