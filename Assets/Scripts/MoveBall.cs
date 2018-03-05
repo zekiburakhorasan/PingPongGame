@@ -4,38 +4,37 @@ using UnityEngine;
 
 public class MoveBall : MonoBehaviour
 {
-    public float speed = 10.0f;
-
-    //MoveRacket SolRacket;
-    //MoveRacket SagRacket;
-
+    public float Speed;
     public GameObject LeftRacket;
     public GameObject RightRacket;
-
-    // Use this for initialization
+    AudioSource audioSource;
+    
     void Start ()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(1, 0)*speed;
-        //SolRacket = LeftRacket.GetComponent<MoveRacket>();
-        //SagRacket = RightRacket.GetComponent<MoveRacket>();
-}
+        Speed = 10.0f;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(1, 0)* Speed;
+        audioSource = GetComponent<AudioSource>();
+    }
 	
-	// Update is called once per frame
 	void FixedUpdate ()
     {
 		
 	}
-
-    //Skor yapma
+    
     private void OnCollisionEnter2D(Collision2D other)
     {
+        if(!audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+
         if (other.gameObject.name == "LeftWall")
         {
-            RightRacket.GetComponent<MoveRacket>().ScoreUp();
+            RightRacket.GetComponent<Racket>().ScoreUp();
         }
         if (other.gameObject.name == "RightWall")
         {
-            LeftRacket.GetComponent<MoveRacket>().ScoreUp();
+            LeftRacket.GetComponent<Racket>().ScoreUp();
         }
 
         if (other.gameObject.name == "LeftRacket")
@@ -52,15 +51,10 @@ public class MoveBall : MonoBehaviour
 
     private void ReturnDirection(Collision2D other, float xDir)
     {
-        //raketin üstüne çarparsa yönünü x=+1 y=hesaplanacak
-        float yMinus = transform.position.y - other.gameObject.transform.position.y;
-        //Raketin uzunluğu hesaplanır
-        float RacketLenght = other.collider.bounds.size.y;
-        //floatları var olarakda tanımlasak V.S. onun float olduğunu algılayıp ona göre davranıyor
-        var y = yMinus / RacketLenght;
-        //Bulduğumuz yön vektörü
-        Vector2 direction = new Vector2(xDir, y);
-        //Bu vektörü topumuzun hızına ekler
-        GetComponent<Rigidbody2D>().velocity = direction * speed;
+        float yMinus = transform.position.y - other.gameObject.transform.position.y; //raketin üstüne çarparsa yönünü x=+1 y=hesaplanacak
+        float RacketLenght = other.collider.bounds.size.y; //Raketin uzunluğu hesaplanır
+        var y = yMinus / RacketLenght; //floatları var olarakda tanımlasak V.S. onun float olduğunu algılayıp ona göre davranıyor
+        Vector2 direction = new Vector2(xDir, y);  //Bulduğumuz yön vektörü
+        GetComponent<Rigidbody2D>().velocity = direction * Speed; //Bu vektörü topumuzun hızına ekler
     }
 }

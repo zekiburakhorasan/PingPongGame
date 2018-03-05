@@ -282,8 +282,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BackgroundPlayer.cs" />
     <Compile Include="Assets\Scripts\MoveBall.cs" />
     <Compile Include="Assets\Scripts\MoveRacket.cs" />
+    <Compile Include="Assets\Scripts\Racket.cs" />
+    <Compile Include="Assets\Scripts\SimpleAIRacket.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
