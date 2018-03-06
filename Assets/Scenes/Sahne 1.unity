@@ -242,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 469, y: -183}
+  m_AnchoredPosition: {x: 468, y: -183}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103897889
@@ -417,7 +417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 305, y: -181}
+  m_AnchoredPosition: {x: 302, y: -181}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &375609604
@@ -452,7 +452,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PC : '
+  m_Text: 'Player-2 : '
 --- !u!222 &375609605
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1001,7 +1001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -253, y: 182}
+  m_AnchoredPosition: {x: -207, y: 181}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659918709
@@ -1661,13 +1661,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2011347332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c76e41d5d56e65408529d30bc3361b1, type: 3}
+  m_Script: {fileID: 11500000, guid: e95e7064cc043a940bf8860eae8c8c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 103897889}
-  MoveSpeed: 10
-  Ball: {fileID: 1974839049}
-  ReferenceValue: 2
+  MoveSpeed: 15
+  verticalAxis: Vertical2
 --- !u!1 &2050875205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,7 +1796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -419, y: 183}
+  m_AnchoredPosition: {x: -374, y: 183}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2121520720
@@ -1832,7 +1831,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'You : '
+  m_Text: 'Player-1 : '
 --- !u!222 &2121520721
 CanvasRenderer:
   m_ObjectHideFlags: 0

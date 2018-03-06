@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: aeb8d13a0a8e885459efd8f8299aa1cf
+  - enabled: 1
+    path: Assets/Scenes/Sahne.unity
+    guid: ae5575bf69b1abe44b13a6fdb920b797
+  - enabled: 1
+    path: Assets/Scenes/Sahne 1.unity
+    guid: 68d40c5b0da5b714798db478128b5942
+  - enabled: 1
+    path: Assets/Scenes/Sahne 2.unity
+    guid: 0137de6a8e4933847a731763a11312b5

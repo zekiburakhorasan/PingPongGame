@@ -286,6 +286,7 @@
     <Compile Include="Assets\Scripts\MoveBall.cs" />
     <Compile Include="Assets\Scripts\MoveRacket.cs" />
     <Compile Include="Assets\Scripts\Racket.cs" />
+    <Compile Include="Assets\Scripts\SceneSelect.cs" />
     <Compile Include="Assets\Scripts\SimpleAIRacket.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
